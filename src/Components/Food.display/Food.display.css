@@ -1,0 +1,36 @@
+.food-display{
+    margin-top: 30px;
+}
+.food-display h2{
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+.food-display-list{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin-top: 30px;
+    gap: 30px;
+    row-gap: 50px;
+}
+
+@media (max-width:1024px) {
+    .food-display-list{
+      display: grid;
+      grid-template-columns: 3fr 3fr 3fr;
+    }
+  }
+
+@media (max-width:768px) {
+    .food-display-list{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      height: 20%;
+    }
+  }
+@media (max-width:425px) {
+    .food-display-list{
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+  }
