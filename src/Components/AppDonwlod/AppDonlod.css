@@ -21,4 +21,10 @@
 .download-platform img:hover{
     transform: scale(1.05);
 }
-
+@media (max-width:425px) {
+   
+    .download-platform img{
+      max-width: 140px;
+     
+    }
+  }

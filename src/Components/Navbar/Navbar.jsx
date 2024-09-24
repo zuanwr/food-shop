@@ -3,13 +3,13 @@ import { assets } from '../../assets/assets'
 import './Navbar.css'
 import { Link } from 'react-router-dom'
 
-const Navbar = () => {
+const Navbar = ({setShowLogin}) => {
 
     const [item,setMenu] = useState ("home")
     
   return (
     <div className='navbar'>
-      <img src={assets.logo} alt="" className='logo'/>
+      <Link to='/'><img src={assets.logo} alt="" className='logo'/></Link>
       <ul className="navbar-menu">
         <Link to='/' onClick={()=> setMenu("home")} className={item === "home" ? "active":"" }>home</Link>
         <a href='#explore-menu' onClick={()=> setMenu("menu")} className={item === "menu" ? "active":""}>menu</a>
@@ -17,12 +17,14 @@ const Navbar = () => {
         <a href='#footer' onClick={()=> setMenu("contact-us")} className={item === "contact-us"? "active":"" }>contact us</a>
       </ul>
       <div className="navbar-right">
-        <img src={assets.search_icon} alt="" />
+        {/* <img src={assets.search_icon} alt="" /> */}
         <div className="search-icon">
-            <img src={assets.basket_icon} alt="" />
+            <Link to='/cart'><img src={assets.basket_icon} alt="" /></Link>
             <div className="dot"></div>
         </div>
-        <button>sign in</button>
+        <div className="icon">
+        <i onClick={()=>setShowLogin(true)} className='bx bxs-user-circle' ></i>
+        </div>
       </div>
     </div>
   )

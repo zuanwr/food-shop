@@ -17,7 +17,8 @@
 @media (max-width:1024px) {
     .food-display-list{
       display: grid;
-      grid-template-columns: 3fr 3fr 3fr;
+      grid-template-columns: 3fr 3fr ;
+      /* margin: 0 auto; */
     }
   }
 
@@ -28,9 +29,9 @@
       height: 20%;
     }
   }
-@media (max-width:425px) {
+@media (max-width:428px) {
     .food-display-list{
       display: grid;
-      grid-template-columns: 1fr;
+      grid-template-columns: 1fr ;
     }
   }

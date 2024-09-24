@@ -50,7 +50,7 @@ hr {
 }
 
 @media (max-width: 768px) {
-  .footer {
+  .footer-content {
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -59,7 +59,7 @@ hr {
     text-align: center;
   }
 }
-@media (max-width: 425px) {
+@media (max-width: 440px) {
   .footer-content {
     display: flex;
     flex-direction: column;

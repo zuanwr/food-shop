@@ -1,5 +1,6 @@
+
 .navbar{
-    padding: 20px 0;
+    padding: 20px 10%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -10,7 +11,6 @@
     z-index: 999;
     background: white;
     width: 100%;
-    padding: auto 10px;
     box-shadow: 0 0 20px #00000015;
 }
 .logo{
@@ -28,7 +28,7 @@
 .navbar-right{
     display: flex;
     align-items: center;
-    gap: 40px;
+    gap: 25px;
 }
 .navbar button{
     background: transparent;
@@ -60,24 +60,36 @@
     top: 2px; 
     right: -7px;
 }
+.icon{
+    font-size: 35px;
+}
 
 
-@media (max-width:1440px) {
+@media (max-width:1024px) {
     .navbar .logo{
         width: 140px;
     }
     .navbar-menu{
         gap: 20px;
         font-size: 17px;
+        display: none;
     }
     .navbar-right{
-        gap: 30px;
+        gap: 15px;
     }
     .navbar-right img{
         width: 22px;
     }
+    .navbar-right button{
+        padding: 7px 20px;
+        font-size: 15px;
+        font-weight: 500;
+    }
 }
 @media (max-width:768px) {
+    .navbar{
+        padding: 20px 8%;
+    }
     .navbar .logo{
         width: 120px;
     }
@@ -98,7 +110,10 @@
         font-weight: 500;
     }
 }
-@media (max-width:425px) {
+@media (max-width:428px) {
+    .navbar{
+        padding: 20px 7%;
+    }
     .navbar-menu{
        display: none;
     }
@@ -110,5 +125,8 @@
         padding: 5px ;
         font-size: 10px;
         font-weight: 500;
+    }
+    .icon{
+        font-size: 25px;
     }
 }

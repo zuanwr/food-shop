@@ -36,7 +36,7 @@ const Footer = () => {
       </div>
       <hr />
       <p className="footer-copyright">
-        copyright 2024 DELL.com - ALL right reserved
+        copyright &copy; 2024 DELL.com - ALL right Reserved
       </p>
     </div>
   );
