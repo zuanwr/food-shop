@@ -12,9 +12,10 @@ const Footer = () => {
             architecto et iste nam sit aut, corporis facere odit ad sunt.
           </p>
           <div className="footer-social-icon">
-            <img src={assets.facebook_icon} alt="" />
-            <img src={assets.twitter_icon} alt="" />
-            <img src={assets.linkedin_icon} alt="" />
+          <i className='bx bxl-facebook'></i>
+          <i className='bx bxl-twitter' ></i>
+          <i className='bx bxl-instagram' ></i>
+          <i className='bx bxl-whatsapp' ></i>
           </div>
         </div>
         <div className="footer-content-center">

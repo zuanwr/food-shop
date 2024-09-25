@@ -36,11 +36,12 @@ li {
 .footer-copyright p {
   color: white;
 }
-.footer-social-icon img {
-  width: 45px;
-  margin-right: 15px;
+.footer-social-icon {
+  font-size: 40px;
+  /* margin-right: 15px;  */
   cursor: pointer;
-}
+  gap: 20px;
+} 
 hr {
   width: 100%;
   margin: 20px 0;
