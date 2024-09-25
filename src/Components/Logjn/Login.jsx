@@ -40,8 +40,8 @@ const Login = ({ setShowLogin }) => {
           </p>
         ) : (
           <p>
-            already have an account{" "}
-            <span onClick={() => setCurState("login")}>login here?</span>
+            Already have an account{" "}
+            <span onClick={() => setCurState("login")}>Login Here?</span>
           </p>
         )}
       </form>

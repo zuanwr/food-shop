@@ -1,9 +1,12 @@
 import { useContext } from "react";
 import "./Cart.css";
 import { StoreContext } from "../../Components/Context/StoreContext";
+import { useNavigate } from "react-router-dom";
 
 const Cart = () => {
-  const { cartItems, food_list, removeFromCart,getTotalAmount } = useContext(StoreContext);
+
+  const { cartItems, food_list, removeFromCart,getTotalCartAmount } = useContext(StoreContext);
+  const Navigate = useNavigate();
     
   return (
     <div className="cart">
@@ -28,9 +31,12 @@ const Cart = () => {
                   <p>${item.price}</p>
                   <p>{cartItems[item._id]}</p>
                   <p>${item.price * cartItems[item._id]}</p>
-                  <p onClick={() => removeFromCart(item._id)} className="cross">
+                  <div className="icon">
+                  <i onClick={()=> removeFromCart(item._id)} className='bx bx-x'></i>
+                  </div>
+                  {/* <p onClick={() => removeFromCart(item._id)} className="cross">
                     x
-                  </p>
+                  </p> */}
                 </div>
                 <hr />
               </div>
@@ -44,20 +50,20 @@ const Cart = () => {
           <div>
             <div className="cart-total-details">
               <p>subtotal</p>
-              <p>{getTotalAmount()}</p>
+              <p>${getTotalCartAmount()}</p>
             </div>
               <hr />
             <div className="cart-total-details">
               <p>delivery free</p>
-              <p>{2}</p>
+              <p>${getTotalCartAmount() === 0?0:2}</p>
             </div>
             <hr />
             <div className="cart-total-details">
               <p>total</p>
-              <p>{getTotalAmount()+2}</p>
+              <p>${getTotalCartAmount() === 0?0:getTotalCartAmount()+2}</p>
             </div>
           </div>
-        <button>proced to chekout</button>
+        <button onClick={()=>Navigate("/order")} >proced to chekout</button>
         </div>
       <div className="cart-promocode">
         <div>

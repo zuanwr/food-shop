@@ -17,7 +17,7 @@
     align-items: center;
     justify-content: space-between;
     text-align: center;
-    gap: 30px;
+    gap: 15px;
     margin: 20px 0;
     overflow-x: scroll; 
 }
@@ -59,7 +59,6 @@
 }
 @media (max-width:1024px) {
     .menu-list-item p{
-        
         font-size: 15px;
     }
 

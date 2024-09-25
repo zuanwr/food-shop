@@ -59,3 +59,14 @@
         font-size: 12px;
     }
 }
+/* @media (max-width:428px) {
+    .header-content{
+        max-width: 50%;
+    }
+    .header-content p{
+        display: none;
+    }
+    .header-content button{
+        font-size: 12px;
+    }
+} */
