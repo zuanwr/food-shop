@@ -2,10 +2,15 @@
     height: 34vw;
     margin: 30px auto;
     /* background: url(./header_img.png) ; */
-    background-repeat: no-repeat;
-    background-size: contain;
+   
     position: relative;
     margin-top: 100px;
+}
+.header-img img{ 
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 .header-content{
     position: absolute;
@@ -59,8 +64,11 @@
         font-size: 12px;
     }
 }
-/* @media (max-width:428px) {
-    .header-content{
+@media (max-width:428px) {
+    .header {
+        width: 100%;
+    }
+    /* .header-content{
         max-width: 50%;
     }
     .header-content p{
@@ -68,5 +76,5 @@
     }
     .header-content button{
         font-size: 12px;
-    }
-} */
+    } */
+}
